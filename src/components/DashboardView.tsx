@@ -17,6 +17,7 @@ import {
   ChevronRight
 } from 'lucide-react';
 import { PosterTemplate } from '../types';
+import CampaignPoster from './CampaignPoster';
 
 interface DashboardProps {
   highContrast: boolean;
@@ -289,6 +290,19 @@ export default function DashboardView({ highContrast, textSizeLevel }: Dashboard
           </div>
         </div>
       </div>
+
+      {/* Official Interactive Campaign Poster Section */}
+      <section className="space-y-6">
+        <div className="text-center md:text-left max-w-2xl">
+          <h2 className={`font-display font-black text-slate-900 dark:text-white ${getTextSizeClass('text-2xl', 1)}`}>
+            SDG 4.3 Policy Advocacy Poster
+          </h2>
+          <p className="text-slate-500 dark:text-slate-400 font-light mt-1 text-sm">
+            High-fidelity interactive replica of the official <strong className="text-[#c51a2d] dark:text-rose-400">Equal Access, Brighter Futures</strong> poster advising key barriers and action plans.
+          </p>
+        </div>
+        <CampaignPoster highContrast={highContrast} textSizeLevel={textSizeLevel} />
+      </section>
 
       {/* Campaign Progress Counter Component */}
       <section className="bg-white dark:bg-slate-900 rounded-2xl p-6 md:p-8 shadow-md border border-slate-100 dark:border-slate-800">
