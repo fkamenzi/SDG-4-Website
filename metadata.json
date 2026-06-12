@@ -1,0 +1,6 @@
+{
+  "name": "Bridge to Equal Ed",
+  "description": "Empowering Learning Through AI Technology - Aligned with UN SDG Target 4.3 for Equal Access to Affordable Technical, Vocational, and Higher Education.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
